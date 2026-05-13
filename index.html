@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA — Voice Assistant</title>
+  <meta name="description" content="NOVA is a Raspberry Pi-based voice assistant with a holographic face, voice control, and faith-grounded features. NOVA Mobile is the companion app." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #0f0f23;
+      color: #e8e8f0;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #2a2a4a;
+    }
+    .badge {
+      display: inline-block;
+      border: 1px solid #c80000;
+      color: #c80000;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 4px 12px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 56px;
+      letter-spacing: 8px;
+      color: #00d4ff;
+      text-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+      margin-bottom: 8px;
+    }
+    .tagline {
+      color: #00a0c8;
+      font-size: 12px;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+    }
+    .description {
+      color: #b4b4b4;
+      font-size: 16px;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 40px 0;
+    }
+    @media (max-width: 520px) {
+      .links { grid-template-columns: 1fr; }
+      h1 { font-size: 38px; letter-spacing: 5px; }
+    }
+    .card {
+      display: block;
+      padding: 28px;
+      background: #1a1a2e;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: #00d4ff;
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      font-size: 18px;
+      color: #00d4ff;
+      margin-bottom: 8px;
+    }
+    .card p {
+      color: #888;
+      font-size: 14px;
+    }
+    .features {
+      margin: 50px 0;
+    }
+    .features h2 {
+      color: #00d4ff;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .features ul {
+      list-style: none;
+    }
+    .features li {
+      padding: 10px 0;
+      border-bottom: 1px solid #2a2a4a;
+      font-size: 15px;
+      color: #c8c8d8;
+    }
+    .features li::before {
+      content: "▸ ";
+      color: #00d4ff;
+      margin-right: 8px;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #2a2a4a;
+      text-align: center;
+      color: #555;
+      font-size: 13px;
+    }
+    footer a { color: #00a0c8; text-decoration: none; }
+    footer a:hover { color: #00d4ff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="badge">▮▮▮ TOP SECRET // SCI // NOFORN ▮▮▮</div>
+      <h1>N.O.V.A.</h1>
+      <div class="tagline">NETWORKED OPERATIONS VIRTUAL ASSISTANT</div>
+      <p class="description">
+        A Raspberry Pi-based voice assistant with a holographic projected face,
+        voice control, smart-home integration, and faith-grounded features.
+        Built for families and friends.
+      </p>
+    </header>
+
+    <div class="links">
+      <a class="card" href="./privacy.html">
+        <h2>Privacy Policy</h2>
+        <p>What data the app accesses, and where it goes. Spoiler: nothing leaves your home network.</p>
+      </a>
+      <a class="card" href="./support.html">
+        <h2>Support</h2>
+        <p>Common questions, troubleshooting, and how to contact the developer.</p>
+      </a>
+    </div>
+
+    <section class="features">
+      <h2>What NOVA Mobile does</h2>
+      <ul>
+        <li>Companion app for NOVA hardware — pairs over your home Wi-Fi</li>
+        <li>Talk to NOVA from your phone — voice transcription happens on the Pi</li>
+        <li>See NOVA's holographic face live, mirrored on your phone</li>
+        <li>Control smart home devices: lights, thermostats, locks</li>
+        <li>Launch Netflix, Disney+, Hulu, and other streaming apps on your Roku</li>
+        <li>Daily scripture, devotionals, prayer mode, faith-rooted encouragement</li>
+        <li>No analytics, no third-party trackers, no cloud — data stays in your home</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>NOVA Mobile is the companion app for the NOVA hardware project.</p>
+      <p style="margin-top: 8px;">
+        Source code (NOVA hardware/Pi): <a href="https://github.com/Ayee788/NOVA">github.com/Ayee788/NOVA</a>
+      </p>
+      <p style="margin-top: 12px;">© 2026 Andrew Yee · Built with Christ at the center</p>
+    </footer>
+  </div>
+</body>
+</html>

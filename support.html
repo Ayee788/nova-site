@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — NOVA Mobile</title>
+  <meta name="description" content="Support and troubleshooting for the NOVA Mobile companion app." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #0f0f23;
+      color: #e8e8f0;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 40px 20px 80px;
+    }
+    .wrap { max-width: 740px; margin: 0 auto; }
+    .back {
+      display: inline-block;
+      color: #00a0c8;
+      text-decoration: none;
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+    .back:hover { color: #00d4ff; }
+    h1 {
+      font-size: 36px;
+      color: #00d4ff;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #2a2a4a;
+    }
+    h2 {
+      color: #00d4ff;
+      font-size: 22px;
+      margin: 40px 0 12px;
+    }
+    h3 {
+      color: #e8e8f0;
+      font-size: 17px;
+      margin: 28px 0 8px;
+    }
+    p { margin-bottom: 16px; color: #c8c8d8; }
+    .contact-card {
+      background: #1a1a2e;
+      border: 1px solid #00d4ff;
+      border-radius: 12px;
+      padding: 28px;
+      margin: 24px 0 32px;
+      text-align: center;
+    }
+    .contact-card .label {
+      color: #888;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .contact-card .email {
+      font-size: 22px;
+      font-weight: 500;
+      color: #00d4ff;
+    }
+    .contact-card .email a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .contact-card .email a:hover { text-decoration: underline; }
+    .contact-card .note {
+      color: #999;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+    code {
+      background: #14142a;
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: #00d4ff;
+      font-family: "SF Mono", Monaco, Consolas, monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      background: #14142a;
+      padding: 16px 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 16px 0;
+      border-left: 3px solid #00d4ff;
+    }
+    pre code {
+      background: none;
+      padding: 0;
+      color: #00d4ff;
+    }
+    ol, ul {
+      margin: 12px 0 16px 24px;
+      color: #c8c8d8;
+    }
+    li { margin-bottom: 8px; }
+    a { color: #00a0c8; }
+    a:hover { color: #00d4ff; }
+    .classified-strip {
+      background: #000;
+      border-top: 2px solid #c80000;
+      border-bottom: 2px solid #c80000;
+      color: #c80000;
+      font-family: "SF Mono", Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-align: center;
+      padding: 8px;
+      margin: -40px -20px 32px;
+    }
+    .declass {
+      display: inline-block;
+      border: 1px solid #ffb400;
+      color: #ffb400;
+      font-family: "SF Mono", Monaco, Consolas, monospace;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      padding: 3px 10px;
+      margin-bottom: 16px;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #2a2a4a;
+      color: #555;
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="classified-strip">▮▮▮ CLASSIFIED // TS // SCI // NOFORN ▮▮▮ DECLASSIFIED FOR PUBLIC RELEASE ▮▮▮</div>
+  <div class="wrap">
+    <a class="back" href="./index.html">← Back to NOVA</a>
+
+    <div class="declass">DECLASSIFIED · OPERATOR SUPPORT · DIVISION 7</div>
+    <h1>Support</h1>
+
+    <p>Thanks for using NOVA Mobile, the companion app for the NOVA Raspberry Pi voice assistant.</p>
+
+    <div class="contact-card">
+      <div class="label">Contact</div>
+      <div class="email"><a href="mailto:ayee788@gmail.com">ayee788@gmail.com</a></div>
+      <div class="note">I read every email. Typical reply within 48 hours.</div>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <h3>What is NOVA?</h3>
+    <p>NOVA is a Raspberry Pi-based home assistant with a 3D holographic face (Pepper's Ghost projection), voice control, smart-home integration, music playback, scripture / devotional content, and more. The mobile app is a companion that lets you control NOVA from your phone over Wi-Fi.</p>
+
+    <h3>Do I need NOVA hardware to use the app?</h3>
+    <p>Yes — the app is designed to pair with a NOVA hardware device on your home Wi-Fi. Without paired hardware, the app's full functionality isn't available.</p>
+    <p>If you'd like to explore the app's interface without hardware, type <code>demo</code> as the Pi address during onboarding to enter a hardware-free demo mode with sample data.</p>
+
+    <h3>How do I find my Pi's address?</h3>
+    <p>On your NOVA Raspberry Pi, run this in a terminal:</p>
+    <pre><code>hostname -I</code></pre>
+    <p>The address to enter in the app is <code>http://[your-pi-ip]:5000</code> (for example, <code>http://192.168.0.112:5000</code>).</p>
+
+    <h3>How do I reset my profile?</h3>
+    <p>Open the app → <strong>Settings</strong> tab → <strong>Reset Profile</strong>. You'll be taken back through the onboarding flow.</p>
+
+    <h3>NOVA isn't connecting</h3>
+    <ol>
+      <li>Make sure your phone and NOVA hardware are on the same Wi-Fi network.</li>
+      <li>Verify NOVA is running on your Pi (it should respond to "Hey NOVA" out loud).</li>
+      <li>Verify the Pi address is correct (run <code>hostname -I</code> on the Pi to confirm).</li>
+      <li>Open <strong>Settings</strong> in the app → tap <strong>Connect</strong>.</li>
+    </ol>
+
+    <h3>Privacy</h3>
+    <p>NOVA Mobile collects no data. All communication is local between your phone and your own NOVA hardware. See the <a href="./privacy.html">Privacy Policy</a> for full details.</p>
+
+    <h3>Troubleshooting voice commands</h3>
+    <ul>
+      <li>Hold the microphone button while speaking (don't just tap).</li>
+      <li>Speak clearly — NOVA uses Whisper for transcription.</li>
+      <li>If audio responses sound choppy on first use, NOVA's Pi side waits a moment for the Bluetooth speaker to be ready — give her a few seconds after boot.</li>
+    </ul>
+
+    <h2>About the project</h2>
+    <p>NOVA was created by <strong>Andrew Yee</strong> for personal and family use. The mobile app and the NOVA Python project are open-source-style maintained by the same developer.</p>
+    <p>NOVA hardware source code (the Python project that runs on the Raspberry Pi): <a href="https://github.com/Ayee788/NOVA">github.com/Ayee788/NOVA</a></p>
+
+    <footer>
+      <a href="./index.html">NOVA</a> · <a href="./support.html">Support</a> · <a href="./privacy.html">Privacy</a>
+      <p style="margin-top: 12px;">© 2026 Andrew Yee</p>
+    </footer>
+  </div>
+</body>
+</html>
